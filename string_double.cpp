@@ -24,7 +24,7 @@ void string_to_vec(string &num_str, vector<string>& num_vec)
     while (right < num_str.size())
     {
         /* code */
-        if (num_str[right] == '-' || (num_str[right] > '0' && num_str[right] < '9') || num_str[right] == '.')
+        if (num_str[right] == '-' || (num_str[right] >= '0' && num_str[right] <= '9') || num_str[right] == '.')
         {
             right++;
             if (right == num_str.size())
